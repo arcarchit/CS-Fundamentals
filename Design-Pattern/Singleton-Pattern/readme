@@ -1,0 +1,16 @@
+1. Suppose you want to create only one object of a class
+
+These happens mostly for Utility classes.
+Example, 
+A class that string to upper case. (Assume java String don't provide this functionality)
+Or you want to validate xml recieved from web, whether it is currpt or not.
+
+2. Steps to make a class SingleTon :
+Make constructor private
+Static method that return object of this class (This object is staic)
+
+If you want to do lazy initializtion don't create the object in advance.
+
+When this static method is invoked check whether object is null or not.
+If it is null create and return the object else return the object.
+

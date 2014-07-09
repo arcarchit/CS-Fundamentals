@@ -1,0 +1,7 @@
+1. Interface Animal
+	sound
+2. Animal can be Cat, Dog or Lion
+3. Factory.getInstance(“Cat”);
+4. We are actually hiding object creation from client. Let client just supply String. It does not need to call constructor.
+
+Although we have taken Animal as interface, same pattern can be applied to Superclass also.
