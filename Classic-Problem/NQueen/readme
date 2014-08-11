@@ -1,0 +1,21 @@
+Problem Statement:
+	Put the N queens on chessboard such that they don't attack each other.
+
+Category:
+	This is an example backTracing.
+
+
+Please note that we don't need 2D array to store the ans here,
+1D array is sufficient enough.
+
+List Of Methods:
+
+1) checkAns()
+	Validate whethere queens are in postion to attck each other or not.
+2) getAns()
+	Method that starts the recursion.
+3) recursiveCall()
+	We keep checking the position of queens in next column.
+4) printSquare()
+	When we have found the valid position, this method prints the chess board.
+

@@ -1,0 +1,18 @@
+Method List :
+
+1) checkForCycle
+2) DetectFaultyNode
+
+
+Above two are too steps for Floyd's cycle detecting algorithm.
+It is also known as tortoise and hare algorithm.
+
+It helps to find out following :
+	1)Whether cycle exist or not
+	2)What is the faulty node
+	3)Distance of faulty node from startig
+	4)Length of the loop
+
+Questions:
+	1)How to detect if there exists multiple faulty nodes ?
+	2)How to optimize algorithm for large linkedlist ?

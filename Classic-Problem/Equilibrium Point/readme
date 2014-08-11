@@ -1,0 +1,11 @@
+Problem Statement:
+
+Equilibrium Point in array is the point for which sum of left and right elements are equal.
+We are asked to find the index of Equilibrium point if it exist.
+
+
+
+Question:
+
+1)What if first element is equilibrium point ?
+2)What if last element is equilibrium point ?
