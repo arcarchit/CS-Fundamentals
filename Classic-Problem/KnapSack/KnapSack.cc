@@ -29,20 +29,20 @@ int KnapSack(int itemIndex, int capacity){
 	if(itemIndex==3)
 		return 0;
 
-	int itemWeight=weight[itemIndex];//10
-	int itemValue=value[itemIndex];//60
+	int itemWeight=weight[itemIndex];
+	int itemValue=value[itemIndex];
 
 
-	int itemExcluded=KnapSack(itemIndex+1, capacity);//
+	int itemExcluded=KnapSack(itemIndex+1, capacity);
 
 
-	if(capacity<itemWeight){
+	if(capacity<itemWeight){	//If weight of item is more than remaining capacity, it should be excluded.
 		return itemExcluded;
 	}
 
 	int itemIncluded=itemValue+KnapSack(itemIndex+1, capacity-itemWeight);
 
-	if(itemIncluded>itemExcluded){
+	if(itemIncluded>itemExcluded){	//If includeing item generates more value than excluding it, lets include that.
 		return itemIncluded;
 	}
 	else{

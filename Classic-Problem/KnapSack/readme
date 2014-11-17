@@ -1,0 +1,10 @@
+1. Solution of knapsack problem by recursion without dynamic programming.
+2. Remember for such decision problem,
+	Choice at current state is optimum only if choice in the subsequent states are optimum.
+
+
+
+Questions :
+1. Solve knapsack using dynamic programming
+2. Solve knapsack using genetic programming
+

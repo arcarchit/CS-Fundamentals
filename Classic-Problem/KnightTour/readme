@@ -1,0 +1,7 @@
+1. Knigh tour problem solved by backtracing.
+
+Note:
+1. When all the moves are performed and we come out of for loop
+	1. We need to mark current square as not visited because we are going back
+	2. We need to decrease count of visited squares.
+

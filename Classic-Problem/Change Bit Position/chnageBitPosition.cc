@@ -14,31 +14,22 @@ void printBinary(int number){
 		number=number<<1;
 		cnt--;
 	}
-	cout<<endl;
 }
 
 
-int printChnagedN(int N,int M,int i,int j){
+int getChnagedN(int N,int M,int i,int j){
 
 	int bitPatternI=1<<i;
 	int bitPatternJ=1<<j;
 
-	int MI=M & bitPatternI;
-	int MJ=M & bitPatternJ;
+	int MI=M | ~bitPatternI;	//Bits at position i is that of M, all others are 1.
+	int MJ=M | ~bitPatternJ;
 
-	int MIJ;
-	if(i==j)
-		MIJ=MI;
-	else
-		MIJ=MI | MJ;
+	int MIJ=MI & MJ;	//Bits at position i and j are that of M, all others are 1.
 
-	int negatedMIJ=!MIJ;
+	int ans=N & MIJ;
 
-	int tempAns=N & negatedMIJ;
-
-	tempAns=tempAns | MIJ;
-
-	return tempAns;
+	return ans;
 }
 
 
@@ -47,18 +38,29 @@ int main(){
 	int N=48;
 	int M=8;
 
+	cout<<endl;
+	cout<<"N :"<<N<<" M :"<<M<<endl<<endl;
+	cout<<"N :";
 	printBinary(N);
 	cout<<endl;
+	cout<<"M :";
 	printBinary(M);
 
 	cout<<endl;
 	cout<<endl;
 
 	int i=4, j=6;
+	cout<<"i :"<<i<<" j :"<<j;
 
-	int ans=printChnagedN(N,M,i,j);
+	int ans=getChnagedN(N,M,i,j);
+
+	cout<<endl;
+	cout<<endl;
 
 	printBinary(ans);
+
+	cout<<endl;
+	cout<<endl;
 
 	return 0;
 }

@@ -1,0 +1,7 @@
+1. Soluion for this problem should be approached in bottom up manner.
+2. I need to changes N.
+3. Find the number with whom I should be doing "and", "or" operation of N.
+4. How will I achieve that number using M, i and j.
+
+5. Another observation. We wnat to change least no of bits. So "and" operation will lead to quick solution 
+	compared to "or" operation.
