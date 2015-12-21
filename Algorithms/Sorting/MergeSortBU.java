@@ -1,3 +1,8 @@
+/*
+This is BU (Bottom-Up) implementation of merge sort.
+It is non recursive, using looping instead of recusion.
+Because of this fact it is somewhta faster than Top-Down approach.
+*/
 public class MergeSortBU{
 
 	private static int[] numbers={2,10,4,7,3,5,12,8,1,6,3};
