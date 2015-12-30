@@ -17,3 +17,22 @@ How to delete elements from Binary Search Tree?
 If the element to be removed is leaf node or has one child then things are simpler.
 But if it has two children then :
 Find the node with minimum payload in right subtree. Place it where node is ti be removed.
+
+
+DFS, BFS and Dijkrat's Algorithm:
+Dijkrat's algorithms is more sophisticted flavour of BFS.
+BFS can be used to find shortest path if graph is not weighted or all the edges have equal weight.
+For finding shortest path we need to maintain two things for each node :
+	Distance from source
+	Prevous node
+DFS is easy to implement, just like tree traversal. 
+While BFS is more complecated, it requires to maintain a queue. While DFS does not require any queue or stack, just recurson will do
+
+What changes should be done to make graph directed?
+I guess while adding edge we should do it for one vertex only, the originator.
+
+
+Making a non weighted graph weighted requires following :
+In vertex class we store the neighbour vertexes for each node, now we need to store distance to this neghbour vetexes as well.
+A naive approach would be to think weigh is a property of edge, not a vetex and we should create a new edge class.
+But as I see in most of the cases we don't create Edge class just add a list of neighbour vetexes in Vertex class only.
