@@ -17,3 +17,39 @@ How to delete elements from Binary Search Tree?
 If the element to be removed is leaf node or has one child then things are simpler.
 But if it has two children then :
 Find the node with minimum payload in right subtree. Place it where node is ti be removed.
+
+
+TODO:
+There are many interesting questions that DFS and BFS can answer.
+For example DFS can answer questions like connected component, computing cycle, finding minimum spanning tree etc.
+Transitive Closure and Floyd Warshall algorithms
+
+
+Some graph vocabulary :
+connected, strongly connected (in directed graph)
+subgraph, spanning subgraph,
+connected components,
+forest, tree
+spanning tree
+
+
+
+How to check if graph is connected?
+If after dfs each node is mark visited then graph is connected.
+It is good implementation to build a dictionary key = node, value = edges
+
+How to check if graph is strongly connected?
+Two DFS searches. One with incoming edges and one with outgoing edges.
+
+
+Defination of transitive closure :
+The transitive closure of a directed graph G is itself a directed graph G∗ such that the
+vertices of G∗ are the same as the vertices of G, and G∗ has an edge (u,v), whenever
+G has a directed path from u to v (including the case where (u,v) is an edge of
+the original G).
+
+This quickly allows us to answer questions like whether u and v are connected or not.
+Floyd Washall is one of the algorithms to compute transitive closure.
+
+
+DAG = Directed acyclic path
