@@ -7,3 +7,9 @@ You can start building heap either from last index or from first index. Staring 
 
 Worst case time complexity is same for bubble sort, selection sort and insertion sort.
 It is just that later two has best case time complexity O(n)
+
+
+Reference for complexity.png : http://bigocheatsheet.com/
+
+![alt tag](https://raw.githubusercontent.com/vora/CS-Fundamentals/Algorithms/Sorting/complexity.PNG)
+
