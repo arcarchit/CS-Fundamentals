@@ -11,5 +11,3 @@ It is just that later two has best case time complexity O(n)
 
 Reference for complexity.png : http://bigocheatsheet.com/
 
-![alt tag](https://raw.githubusercontent.com/vora/CS-Fundamentals/Algorithms/Sorting/complexity.PNG)
-
